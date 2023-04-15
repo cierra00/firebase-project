@@ -44,6 +44,7 @@ export default function Product({
     filteredData.map((product) => {
       console.log(product.inCart)
       setAddCart(product.inCart === true ? product.inCart = false: true)
+       
       
       console.log(product.inCart)
     })
@@ -76,12 +77,12 @@ export default function Product({
       </div>
       
       </NavLink>
-      <form onSubmit={handleAdd} id={id}><button type="submit" className="btn" 
-      onSubmit={handleAdd}>Add To Cart" 
-      </button></form>
-      <form onSubmit={handleDel} id={id}><button type="submit" className="btn" 
-      onSubmit={handleDel}>Remove From Cart
-      </button></form>
+      {location.pathname=== "/products" ? <form onSubmit={handleAdd} id={id}><button type="submit" className="btn" 
+      onSubmit={handleAdd}>Add To Cart</button>
+      </form> :<form onSubmit={handleAdd} id={id}><button type="submit" className="btn" 
+      onSubmit={handleDel}>Remove </button></form> } 
+      
+      
        
        
     </Card>
