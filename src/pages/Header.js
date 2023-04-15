@@ -34,7 +34,7 @@ export default function Header() {
       
       <span>
       <SearchHeader />
-      <CartHeader />
+      
       </span>
     </nav>
    
