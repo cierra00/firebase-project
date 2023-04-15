@@ -77,10 +77,10 @@ export default function Product({
       </div>
       
       </NavLink>
-      {location.pathname=== "/products" ? <form onSubmit={handleAdd} id={id}><button type="submit" className="btn" 
-      onSubmit={handleAdd}>Add To Cart</button>
-      </form> :<form onSubmit={handleDel} id={id}><button type="submit" className="btn" 
-      onSubmit={handleDel}>Remove </button></form> } 
+      {location.pathname=== "/cart" ? <form onSubmit={handleDel} id={id}><button type="submit" className="btn" 
+      onSubmit={handleAdd}>Delete Item</button>
+      </form> :<form onSubmit={handleAdd} id={id}><button type="submit" className="btn" 
+      onSubmit={handleAdd}>Add to Cart </button></form> } 
       
       
        
