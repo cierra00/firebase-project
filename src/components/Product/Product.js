@@ -79,7 +79,7 @@ export default function Product({
       </NavLink>
       {location.pathname=== "/products" ? <form onSubmit={handleAdd} id={id}><button type="submit" className="btn" 
       onSubmit={handleAdd}>Add To Cart</button>
-      </form> :<form onSubmit={handleAdd} id={id}><button type="submit" className="btn" 
+      </form> :<form onSubmit={handleDel} id={id}><button type="submit" className="btn" 
       onSubmit={handleDel}>Remove </button></form> } 
       
       
