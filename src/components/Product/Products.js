@@ -29,6 +29,7 @@ export default function Products({ productList}) {
              imageSRC={product.imageSRC}
              alt={product.imgAlt}
              result={result}
+             inCart={product.inCart}
              
              
             />

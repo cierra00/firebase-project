@@ -46,7 +46,7 @@ const ProductData = [
       price: 1000.00,
       imageSRC: "../images/pexels-david-bartus-586687.jpg",
       imgAlt: "Come see Venice Italy",
-      inCart: true,
+      inCart: false,
       qty: 0
     },
     {
