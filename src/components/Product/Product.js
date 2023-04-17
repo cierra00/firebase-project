@@ -43,7 +43,7 @@ export default function Product({
    const filteredData = ProductData.filter(product=> product.id == e.target.id);
     filteredData.map((product) => {
       console.log(product.inCart)
-      setAddCart(product.inCart === true ? product.inCart = false: true)
+      setAddCart(product.data.inCart === true ? product.data.inCart = false: true)
        
       
       console.log(product.inCart)
@@ -62,7 +62,7 @@ export default function Product({
       <div className="product">
         <img src={imageSRC} alt={imgAlt} />
       </div>
-
+{id}
       <div
         >
         <h3>{name}</h3>
@@ -75,7 +75,7 @@ export default function Product({
         className="text-display">
         ${price}.00 USD
       </div>
-      
+      {inCart}
       </NavLink>
       {location.pathname=== "/cart" ? <form onSubmit={handleDel} id={id}><button type="submit" className="btn" 
       onSubmit={handleAdd}>Delete Item</button>

@@ -1,6 +1,5 @@
 import React from 'react'
 import {NavLink, useNavigate} from 'react-router-dom';
-import CartHeader from '../components/shared/CartHeader';
 import {UserAuth} from "../components/context/AuthContext"
 import SearchHeader from '../components/shared/SearchHeader';
 

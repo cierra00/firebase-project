@@ -1,7 +1,7 @@
-const ProductData = [
+/*const ProductData = [
     {
       id: 1,
-      name: "Hot Air Ballon Adventure",
+      name: "Hot Air Balloon Adventure",
       description: "Enjoy a 3 hour hot air balloon ride down the beautiful coastline",
       price: 200.00,
       imageSRC:"../images/pexels-taryn-elliott-3889987.jpg",
@@ -121,4 +121,4 @@ const ProductData = [
     },
   ];
   
-  export default ProductData;
+  export default ProductData; */

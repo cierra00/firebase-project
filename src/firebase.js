@@ -1,7 +1,9 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {getAuth} from 'firebase/auth';
-import {getFirestore} from 'firebase/firestore';
+import { getFirestore, doc, getDoc } from "firebase/firestore"
+import Firestore from "firestore";
+import { stringify } from "uuid";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -21,4 +23,15 @@ const app = initializeApp(firebaseConfig);
 // Initialize Firebase Authentication and get a reference to the service
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
+async function readASingleDocument() {
+  const mySnapshot = await getDoc(specialOfTheDay);
+  if(mySnapshot.exists()){
+    const docData = mySnapshot.data();
+    console.log(`My data is ${JSON.stringify(docData)}`)
+  }
+}
+
+const specialOfTheDay = doc( db , '/productDB/k4EeOy2nPe095k4TrRQr')
+readASingleDocument();
 export default app;
